@@ -1,0 +1,25 @@
+{
+  "author": "Francisco Tavares de Lima Neto",
+  "deprecated": false,
+  "description": "Callbag operator that maps over values that satisfies a predicate. AKA filterMap",
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "tape": "^4.9.0"
+  },
+  "keywords": [
+    "callbag"
+  ],
+  "license": "MIT",
+  "main": "readme.js",
+  "name": "callbag-map-when",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/franciscotln/callbag-map-when.git"
+  },
+  "scripts": {
+    "test": "tape test.js"
+  },
+  "version": "1.0.0"
+}
