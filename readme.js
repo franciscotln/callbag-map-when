@@ -33,7 +33,14 @@ const mapWhen = (f, m) => (source) => (start, sink) => {
   let ask;
   start === 0 && source(start, (t, d) => {
     if (start === t) ask = d;
-    if (t === 1) return f(d) ? sink(t, m(d)) : ask(t);
+    if (t === 1) {
+      try {
+        f(d) ? sink(t, m(d)) : ask(t);
+      } catch(e) {
+        sink(2, e);
+      }
+      return;
+    }
     sink(t, d);
   });
 };
