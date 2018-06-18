@@ -1,5 +1,5 @@
 const test = require('tape');
-const mapWhen = require('./readme');
+const mapWhen = require('.');
 
 const TYPES = {
   FUNCTION: 'function',

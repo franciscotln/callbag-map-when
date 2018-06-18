@@ -4,13 +4,13 @@
   "description": "Callbag operator that maps over values that satisfies a predicate. AKA filterMap",
   "dependencies": {},
   "devDependencies": {
-    "tape": "^4.9.0"
+    "tape": "~4.9.1"
   },
   "keywords": [
     "callbag"
   ],
   "license": "MIT",
-  "main": "readme.js",
+  "main": "index.js",
   "name": "callbag-map-when",
   "repository": {
     "type": "git",
