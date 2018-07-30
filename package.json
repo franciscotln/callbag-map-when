@@ -4,6 +4,8 @@
   "description": "Callbag operator that maps over values that satisfies a predicate. AKA filterMap",
   "dependencies": {},
   "devDependencies": {
+    "callbag-filter": "^1.0.1",
+    "callbag-map": "^1.0.1",
     "tape": "~4.9.1"
   },
   "keywords": [
