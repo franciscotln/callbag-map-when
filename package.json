@@ -2,22 +2,32 @@
   "author": "Francisco Tavares de Lima Neto",
   "deprecated": false,
   "description": "Callbag operator that maps over values that satisfies a predicate. AKA filterMap",
-  "dependencies": {},
+  "dependencies": {
+    "callbag": "^1.2.0",
+    "callbag-filter": "^1.1.0",
+    "callbag-map": "^1.1.0"
+  },
   "devDependencies": {
-    "tape": "~4.9.1"
+    "rollup": "^1.18.0",
+    "tape": "^4.11.0"
   },
   "keywords": [
     "callbag"
   ],
   "license": "MIT",
-  "main": "index.js",
+  "main": "index.cjs.js",
+  "module": "index.js",
+  "types": "index.d.ts",
   "name": "callbag-map-when",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/franciscotln/callbag-map-when.git"
   },
   "scripts": {
-    "test": "tape test.js"
+    "build": "rollup $npm_package_module -o $npm_package_main --f cjs",
+    "pretest": "npm run build",
+    "test": "tape test.js",
+    "prepare": "npm test"
   },
   "version": "2.0.0"
 }
